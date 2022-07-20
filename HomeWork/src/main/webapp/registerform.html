@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作業一</title>
+<style>
+
+        .st1 {
+            width: 450px;
+            border-bottom: 3px dashed gray;
+            margin: 20px;
+            padding-bottom: 10px;
+        }
+
+        .sub {
+            width: 450px;
+            margin: 20px;
+            text-align: center;
+        }
+
+    
+
+        fieldset {
+            width: 500px;
+            border: 5px dotted salmon;
+            border-radius: 30px;
+            margin: 15px;
+        }
+
+        legend {
+            color: slategray;
+            margin-left: 150px;
+        }
+   
+</style>
+</head>
+<body>
+<H1 ALIGN="CENTER">作業一表單</H1>
+    <form action="RegisterFormServlet" method="post" >
+        <fieldset>
+            <legend>個人資料</legend>
+            <div class="st1">
+                <label for="account1" class="t1">姓名:</label><br>
+                <input type="text" id="" name="name" >
+            </div>
+            <div class="st1">
+                <label for="" class="t1">畢業學校:</label><br>
+                <input type="text" name="school" id="" >
+            </div>
+            <div class="st1">
+                <label for="" class="t1">畢業科系:</label><br>
+                <input type="text" name="department" id="" maxlength="10" >
+            </div>
+            <div class="st1">
+                <label for="" class="t1">性別:</label><br>
+                <label><input type="radio" name="gender" value="male">男</label>
+                <label><input type="radio" name="gender" value="female">女</label>
+
+            </div>
+       
+        </fieldset>
+        
+            <div class="st1">
+                <label for="" class="t1">交通工具:</label><br>
+                <label>
+                    <input type="checkbox" name="transport" id="" value="腳踏車">腳踏車
+                </label><br><label>
+                    <input type="checkbox" name="transport" id="" value="機車">機車
+                </label><br><label>
+                    <input type="checkbox" name="transport" id="" value="火車">火車
+                </label><br><label>
+                    <input type="checkbox" name="transport" id="" value="汽車">汽車
+                </label>
+
+            </div>
+         
+        <div class="sub">
+            <input type="submit" value="送出">
+            <input type="reset" value="清除" >
+        </div>
+    </form>
+</body>
+</html>
